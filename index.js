@@ -92,18 +92,18 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  // implement me!
   const left = positionToInteger(DODGER.style.left);
   window.requestAnimationFrame(() => {
+    if (left > 0) {
     DODGER.style.left = `${left - 4}px`;
+    }
   })
 }
 
 function moveDodgerRight() {
-
   const left = positionToInteger(DODGER.style.left);
   window.requestAnimationFrame(() => {
-    if (left > 0) {
+    if (left < 360) {
       DODGER.style.left = `${left + 4}px`;
     }
     })
