@@ -72,7 +72,7 @@ GAME.appendChild(rock);
      * we should call endGame()
      */
      if (top < GAME_HEIGHT) {
-       
+       window.requestAnimationFrame(moveRock);
      }
 
     /**
