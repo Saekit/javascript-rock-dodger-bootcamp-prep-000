@@ -107,7 +107,8 @@ window.requestAnimationFrame(moveRock);
 function endGame() {
   clearInterval(gameInterval);
   rocks.forEach(rocks.remove());
-  document.removeEventListener('moveDodger')
+  document.removeEventListener('keydown', moveDodger);
+  alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
