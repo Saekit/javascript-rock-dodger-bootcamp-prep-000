@@ -75,7 +75,9 @@ function endGame() {
 
 
 function moveDodger(e) {
-  if ([LEFT_ARROW, RIGHT_ARROW].indexOf)
+  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1) {
+    
+  }
 
   if (e.which === 37) {
     moveDodgerLeft();
