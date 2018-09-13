@@ -45,7 +45,6 @@ function createRock(x) {
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
-  // Hmmm, why would we have used `var` here?
   var top = rock.style.top = 0;
 
   /**
