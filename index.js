@@ -106,6 +106,7 @@ window.requestAnimationFrame(moveRock);
  */
 function endGame() {
   clearInterval(gameInterval);
+  rocks.forEach(rocks.remove());
   
 }
 
