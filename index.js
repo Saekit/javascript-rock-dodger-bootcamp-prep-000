@@ -64,7 +64,7 @@ GAME.appendChild(rock);
     // (use the comments below to guide you!)
     
     if (checkCollision(rock)) {
-      return endGame;
+      return endGame();
     }
     
     /**
