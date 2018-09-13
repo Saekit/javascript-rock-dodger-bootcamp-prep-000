@@ -104,17 +104,16 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  // implement me!
+
   const left = positionToInteger(DODGER.style.left);
   window.requestAnimationFrame(() => {
-    if (left )
-    DODGER.style.right = `${left + 4}px`;
-  })
-  /**
-   * This function should move DODGER to the right
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
+    if (left > 0) {
+      DODGER.style.right = `${left + 4}px`;
+    }
+    })
+  
 }
+
 
 /**
  * @param {string} p The position property
