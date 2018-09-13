@@ -62,7 +62,9 @@ GAME.appendChild(rock);
     
     // implement me!
     // (use the comments below to guide you!)
-    if ()
+    if (checkCollision(rock)) {
+      
+    }
     
     /**
      * If a rock collides with the DODGER,
