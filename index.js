@@ -1,16 +1,16 @@
 /**
  * Don't change these constants!
  */
-const DODGER = document.getElementById('dodger')
-const GAME = document.getElementById('game')
-const GAME_HEIGHT = 400
-const GAME_WIDTH = 400
-const LEFT_ARROW = 37 // use e.which!
-const RIGHT_ARROW = 39 // use e.which!
-const ROCKS = []
-const START = document.getElementById('start')
+const DODGER = document.getElementById('dodger');
+const GAME = document.getElementById('game');
+const GAME_HEIGHT = 400;
+const GAME_WIDTH = 400;
+const LEFT_ARROW = 37; // use e.which!
+const RIGHT_ARROW = 39; // use e.which!
+const ROCKS = [];
+const START = document.getElementById('start');
 
-var gameInterval = null
+var gameInterval = null;
 
 /**
  * Be aware of what's above this line,
@@ -40,15 +40,11 @@ function checkCollision(rock) {
 
 
 function createRock(x) {
-  const rock = document.createElement('div')
-
-  rock.className = 'rock'
-  rock.style.left = `${x}px`
-
+  const rock = document.createElement('div');
+  rock.className = 'rock';
+  rock.style.left = `${x}px`;
   var top = rock.style.top = 0;
-
-
-GAME.appendChild(rock);
+  GAME.appendChild(rock);
 
   function moveRock() {
     rock.style.top = `${top += 2}px`;
@@ -64,11 +60,8 @@ GAME.appendChild(rock);
      }
 
   }
-window.requestAnimationFrame(moveRock);
- 
+  window.requestAnimationFrame(moveRock);
   ROCKS.push(rock);
-
-  // Finally, return the rock element you've created
   return rock;
 }
 
