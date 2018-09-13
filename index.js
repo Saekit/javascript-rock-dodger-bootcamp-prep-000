@@ -75,7 +75,7 @@ function endGame() {
 
 
 function moveDodger(e) {
-  // implement me!
+
   if (e.which === 37) {
     moveDodgerLeft();
   }
