@@ -71,7 +71,9 @@ GAME.appendChild(rock);
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     if (top < )
+     if (top < GAME_HEIGHT) {
+       
+     }
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
