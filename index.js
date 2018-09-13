@@ -76,6 +76,12 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
+  if (e.which === 37) {
+    moveDodgerLeft();
+  }
+  if (e.which == 39) {
+    moveDodgerRight();
+  }
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
