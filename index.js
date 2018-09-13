@@ -58,7 +58,7 @@ GAME.appendChild(rock);
    * seems like a good pace.)
    */
   function moveRock() {
-    rock.style.top = `
+    rock.style.top = `${top += 2
     
     // implement me!
     // (use the comments below to guide you!)
